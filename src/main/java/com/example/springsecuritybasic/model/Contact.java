@@ -13,8 +13,6 @@ import java.util.Date;
 @Table(name = "contact_messages")
 public class Contact {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO, generator="native")
-    @GenericGenerator(name = "native", strategy = "native")
     @Column(name = "contact_id")
     private String contactId;
     @Column(name = "contact_name")
