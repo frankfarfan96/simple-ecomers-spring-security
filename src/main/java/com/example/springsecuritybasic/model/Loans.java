@@ -13,14 +13,13 @@ import java.util.Date;
 @Table(name = "loans")
 public class Loans {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO, generator="native")
+     @GeneratedValue(strategy = GenerationType.AUTO, generator="native")
     @GenericGenerator(name = "native", strategy = "native")
     @Column(name = "loan_number")
+    @Id
     private int loanNumber;
     @Column(name = "customer_id")
     private int customerId;
-    @Id
     @Column(name = "start_dt")
     private Date startDt;
     @Column(name = "loan_type")
