@@ -20,7 +20,6 @@ public class Customer {
     private String email;
     @Column(name = "mobile_number")
     private String mobileNumber;
-    @JsonIgnore
     private String pwd;
     private String role;
     @Column(name = "create_dt")

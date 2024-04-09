@@ -14,7 +14,7 @@ import java.util.Date;
 @Entity
 @Table(name = "account_transactions")
 public class AccountTransactions {
-    @Column(name = "transactcion_id")
+    @Column(name = "transaction_id")
     private int transactionId;
     @Id
     @Column(name = "account_number")
